@@ -12,10 +12,10 @@ app.use(express.json())
 app.use(cors())
 //connectivity
 connectDB()
+// http://localhost:5000/api/user/signup
 // routes definition
 app.use('/api/user', userRoute);
 app.use('/api/auth', authUserRoute)
-// http://localhost:5000/api/user/sighup
 app.listen(PORT, () => {
     console.log(`your server is runing in ${PORT}`);
 })
